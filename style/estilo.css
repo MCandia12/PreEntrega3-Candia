@@ -317,6 +317,8 @@ input, textarea{
 .campo{
     border: solid 1.4px #ccc;
     padding: 15px;
+    font-size: 1.3rem;
+    color: black;
 }
 
 .textarea1 textarea{
@@ -357,117 +359,32 @@ input, textarea{
 
 /* Contacto.html */
 
+.menu-nav{
+    background-color: #66bde6;
+}
+
+.nav-item a{
+    color: black;
+    font-size: 1.4rem;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
 .caja_formulario2{
     background-color: white;
     align-items: center;
-    width: 900px;
-    height: 850px;
+    width: 70%;
     border-radius: 4px;
     font-size: 1.1rem;
-    padding: 40px;
-    margin: 40px auto;
+    padding: 28px;
+    margin: auto;
+    margin-bottom: 70px;
 }
 
-.caja_formulario2 .formulario2 {
-    align-content: space-evenly; 
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.4fr 0.8fr 0.3fr;
-    gap: 18px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "nombre2 apellido2"
-      "direccion direccion"
-      "email2 telefono"
-      "asunto asunto"
-      "textarea2 textarea2"
-      "enviar2 enviar2";
-}
-
-.nombre2{ 
-    grid-area: nombre2; 
-}
-
-.apellido2{ 
-    grid-area: apellido2; 
-}
-
-.direccion{ 
-    grid-area: direccion; 
-}
-
-.email2{ 
-    grid-area: email2; 
-}
-
-.telefono{ 
-    grid-area: telefono; 
-}
-
-.asunto{ 
-    grid-area: asunto; 
-}
-
-.textarea2{ 
-    grid-area: textarea2; 
-}
-
-.enviar2{
-    grid-area: enviar2;
-}
-
-.nombre2 input{
-    width: 400px;
-}
-
-.apellido2 input{
-    width: 400px;
-}
-
-.direccion input{
-    width: 810px;
-}
-
-.email2 input{
-    width: 400px;
-}
-
-.telefono input{
-    width: 400px;
-}
-
-.asunto input{
-    width: 810px;
-}
-
-.textarea2 textarea{
-    min-width: 810px;
-    max-width: 810px;
-    min-height: 300px;
-    max-height: 300px;
-}
-
-.enviar2{
-    text-align: center;
+.btn{
     background-color: #66bde6;
-    border-radius: 3px;
-    text-decoration: none;
-}
-
-.enviar2 input{
-    width: 860px;
-    height: 65px;
-    padding: 20px 15px;
-    color: white;
-    background-color: #66bde6;
-    cursor: pointer;
-}
-
-.enviar2 input:hover{
-    background-color: #3b6f86;
-}
-
-.enviar2 input:active{
-    background-color: #38687c;
 }

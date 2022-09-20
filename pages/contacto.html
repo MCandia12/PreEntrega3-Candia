@@ -5,49 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/img/logo.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/estilo.css">
     <title>Contactanos</title>
 </head>
 
-<body>
+<body class="body-contacto">
 
-    <header>
 
-        <div class="logo">  
-            <img  src="../assets/img/logo.png" alt="Logo">
-        </div>
+        <nav class="menu-nav navbar navbar-expand-lg container-fluid">
 
-        <div class="titulo">
-            <h1>Productos Jireh</h1>
-        </div>
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html"><img src="../assets/img/logo.png" alt=""></a>
 
-        <div class="redes">
-        
-            <a href="https://www.instagram.com/pdjireh/?hl=en"><img src="../assets/img/instagram-logo.png" width="50px" alt="Cuadradito de Instagram"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
-        
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXLFVCCTFMlMfqvjdPMNRRZBJFwkxVQpgznXLqxlskkPVTKhLFMQXDxJnFTgCJfCBsbCN"><img src="../assets/img/gmail-logo.png" width="50px" alt="Cuadradito de Gmail"></a>
-        
-        
-            <a href="https://wa.me/5491125137543"><img src="../assets/img/whatsapp-logo.png" width="50px" alt="Cuadradito de whatsapp"></a>
-    
-        </div>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
 
-    </header>
+                    <ul class="p-6 navbar-nav m-auto">
 
-    <nav>
-        <ul class="menu">
-            <li class="item"><a href="../index.html">Inicio</a></li>
-            <li class="item"><a href="./productos.html">Productos</a></li>
-            <li class="item"><a href="./sobre_nosotros.html">Sobre Nosotros</a></li>
-            <li class="item"><a href="./servicio_al_cliente.html">Servicio Al Cliente</a></li>
-            <li class="item"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+                        <li class="nav-item">
+                         <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicio_al_cliente.html"">Servicio al cliente</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html" >Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
 
     <main>
         
-        <div class="subtitulo">
+        <div class="subtitulo-contacto">
 
             <h1>
             Contactanos
@@ -55,43 +65,42 @@
 
         </div>
 
-        <div class="caja_formulario2">
+        <div class="container-fluid">
 
-            <form action="" class="formulario2">
+            <form action="" class="caja_formulario2 row g-3 mt-3">
 
-                <div class="nombre2">
-                    <input type="text" name="name" placeholder="Nombre" class="campo" required>
-                </div>
-
-                <div class="apellido2">
-                    <input type="text" name="apellido" placeholder="Apellido" class="campo" required>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <input type="text" class="form-control campo" placeholder="Nombre" required>
                 </div>
 
-                <div class="direccion">
-                    <input type="text" name="direccion" placeholder="Dirección" class="campo">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <input type="text" class="form-control campo" placeholder="Apellido" required>
                 </div>
 
-                <div class="email2">
-                    <input type="email" name="email" placeholder="Email" required class="campo" required>
+                <div class="col-12 col-md-12 col-xs-12">
+                    <input type="text" class="form-control campo" placeholder="Dirección">
                 </div>
 
-                <div class="telefono">
-                    <input type="number" name="numero" placeholder="Teléfono" required class="campo">               
-                </div>
-            
-                <div class="asunto">
-                    <input type="text" name="asunto" placeholder="Asunto" class="campo">
-                </div>
-            
-                <div class="textarea2">
-                    <textarea name="mensaje" cols="30" rows="10" placeholder="Escribenos tu mensaje aqui..." required class="campo">
-                    </textarea>
-                </div>
-        
-                <div class="enviar2">
-                    <input type="submit" value="Enviar">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <input type="email" class="form-control campo" placeholder="E-Mail" required>
                 </div>
 
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <input type="number" class="form-control campo" placeholder="Teléfono">
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <input type="text" class="form-control campo" placeholder="Asunto" required>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aqui..." class="form-control campo" required></textarea>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-xs-12 text-center d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg campo text-light">Enviar</button>
+                </div>
+                
             </form>
 
         </div>
@@ -108,17 +117,17 @@
 
         <div class="redes">
             
-            <a href="https://www.instagram.com/pdjireh/?hl=en">
+            <a href="https://www.instagram.com/pdjireh/?hl=en" target="_blank">
                 <img src="../assets/img/instagram-logo.png" width="50px" alt="Cuadradito de Instagram">
             </a>
 
         
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXLFVCCTFMlMfqvjdPMNRRZBJFwkxVQpgznXLqxlskkPVTKhLFMQXDxJnFTgCJfCBsbCN">
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXLFVCCTFMlMfqvjdPMNRRZBJFwkxVQpgznXLqxlskkPVTKhLFMQXDxJnFTgCJfCBsbCN" target="_blank">
                 <img src="../assets/img/gmail-logo.png" width="50px" alt="Cuadradito de Gmail">
             </a>
         
         
-            <a href="https://wa.me/5491125137543">
+            <a href="https://wa.me/5491125137543" target="_blank">
                 <img src="../assets/img/whatsapp-logo.png" width="50px" alt="Cuadradito de whatsapp">
             </a>
     
@@ -126,5 +135,7 @@
 
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
