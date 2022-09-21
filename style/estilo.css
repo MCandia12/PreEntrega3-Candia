@@ -4,19 +4,18 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #e4f4fd;
-    font-family: "PTSans-Regular";
-}
-
 @font-face{
     font-family: "Padauk-Regular";
     src: url(../assets/font/Padauk-Regular.ttf);
 }
 
 @font-face{
-    font-family: "Montserrat-Light.ttf";
+    font-family: "Montserrat-Light";
     src: url(../assets/font/Montserrat-Light.ttf);
+}
+
+body{
+    background-color: #e4f4fd;
 }
 
 h1,h2,h3,h4,h5{
@@ -26,7 +25,7 @@ h1,h2,h3,h4,h5{
     color: black;
 }
 
-p,li{
+p,li,ul,a{
     font-family: Padauk-Regular;
     text-align: center;
     padding: 5px;
