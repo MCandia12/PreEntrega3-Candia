@@ -240,10 +240,15 @@ footer{
 }
 
 .ubicacion{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
+.ubicacion iframe{
+    justify-content: center;
+    width: 50%;
+}
 
 /* Servicio Al Cliente.html*/
 
