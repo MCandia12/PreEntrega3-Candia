@@ -141,12 +141,11 @@ nav{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     text-align: center;
     align-items: center;
-    align-self: flex-end;
     background-color: #2a8db4;
     height: 100%;
+    align-items: flex-end;
 }
 
 .autor p{
@@ -362,6 +361,11 @@ input, textarea{
 
 
 /* Contacto.html */
+
+.navbar{
+    position: sticky;
+    z-index: 1;
+}
 
 .hamburguesa{
     background-color: #66bde6;
