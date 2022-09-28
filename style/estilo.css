@@ -120,12 +120,13 @@ nav{
     border: solid 3px #2a8db4;
     background-color: #9bf0ff;
     text-align: center;
-    margin-top: 150px;
-    width: 700px;
-    height: 300px;
+    margin-top: 40px;
+    width: 600px;
+    height: 450px;
 }
 
 .horarios .cuadro .titulohorario{
+    margin-top: 50px;
     font-size: 2.5rem;
 }
 
@@ -135,17 +136,15 @@ nav{
 
 .horarios .cuadro .infohorario .dias{
     font-size: 1.3rem;
-    padding: 13px;
 }
 
 footer{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #2a8db4;
     height: 100%;
-    align-items: flex-end;
 }
 
 .autor p{
@@ -395,4 +394,66 @@ input, textarea{
 
 .btn{
     background-color: #66bde6;
+}
+
+/* Vista Mobile del Header y Footer */
+
+@media screen and (max-width: 576px){
+    header{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+
+/* Vista mobile del inicio*/
+
+@media screen and (max-width: 992px){
+    .horarios{
+        margin-top: 60px;
+        flex-wrap: wrap;
+    }
+
+    .imagen-horario{
+        margin-top: 10px;
+    }
+
+    .cuadro{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 600px;
+        margin-bottom: 70px;
+    }
+
+    .infohorario{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .horarios .cuadro .titulohorario{
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.ubicacion iframe{
+    justify-content: center;
+    width: 50%;
 }
