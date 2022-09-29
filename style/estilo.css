@@ -156,17 +156,19 @@ footer{
 .contenedor{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 400px;
-    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-bottom: 50px;
+    margin-top: 80px;
 }
 
 .contenedor .productos{
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
@@ -439,21 +441,3 @@ input, textarea{
     }
 }
 
-
-
-
-
-
-
-
-
-.ubicacion{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.ubicacion iframe{
-    justify-content: center;
-    width: 50%;
-}
