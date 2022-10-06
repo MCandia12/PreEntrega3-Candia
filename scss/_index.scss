@@ -1,0 +1,68 @@
+main{
+    .titulo2{
+        margin-bottom: 50px;
+        font-size: 1.5rem;
+    }
+    .slader img{
+        margin-top: 10px;
+        margin-left: 23%;
+    }
+}
+
+.horarios{
+        background-color: $fondo;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-top: 200px;
+        width: 100%;
+        .imagen-horario img{
+            width: 450px;
+        }
+        & .cuadro{
+            border: solid 3px $fondo-oscuro;
+            background-color: #9bf0ff;
+            text-align: center;
+            margin-top: 40px;
+            width: 600px;
+            height: 450px;
+            .titulohorario{
+                margin-top: 50px;
+                font-size: 2.5rem;
+            }
+            .infohorario h2{
+                font-size: 2rem;
+            }
+            .infohorario .dias{
+                font-size: 1.3rem;
+            }
+        }
+}
+
+@media screen and (max-width: $lg){
+    .horarios{
+        margin-top: 60px;
+        flex-wrap: wrap;
+        .imagen-horario{
+            margin-top: 10px;
+            & img{
+                width: 90%;
+            }
+        }
+        .cuadro{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 500px;
+            margin-bottom: 70px;
+            .titulohorario{
+                margin-top: 20px;
+            }
+            .infohorario{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

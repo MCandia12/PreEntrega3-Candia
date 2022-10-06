@@ -1,0 +1,44 @@
+main{
+    .caja_formulario{
+        background-color: white;
+        align-items: center;
+        width: 70%;
+        border-radius: 4px;
+        font-size: 1.1rem;
+        padding: 28px;
+        margin: auto;
+        margin-bottom: 70px;
+        input, textarea{
+            border: 0px;
+            outline: none;
+            font-size: 1.1rem;
+        }    
+        .nombre1 input{
+            width: 350px;
+        }
+        .apellido1 input{
+            width: 350px;
+        }
+        .email1 input{
+            width: 730px;
+        }
+        .campo{
+            border: solid 1.4px #ccc;
+            padding: 15px;
+            font-size: 1.3rem;
+            color: black;
+            &:focus{
+                border-color: $celeste;
+            }
+        }
+        .textarea1{
+            textarea{
+                max-height: 350px;
+                min-height: 350px;
+            }
+        }
+        .btn{
+            background-color: $celeste;
+        }
+    }
+}

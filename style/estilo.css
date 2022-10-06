@@ -1,387 +1,239 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-@font-face{
-    font-family: "Padauk-Regular";
-    src: url(../assets/font/Padauk-Regular.ttf);
-}
+@font-face {
+  font-family: "Padauk-Regular";
+  src: url(../assets/font/Padauk-Regular.ttf); }
 
-@font-face{
-    font-family: "Montserrat-Light";
-    src: url(../assets/font/Montserrat-Light.ttf);
-}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../assets/font/Montserrat-Light.ttf); }
 
-body{
-    background-color: #e4f4fd;
-}
+h1, h2, h3, h4, h5 {
+  font-family: Montserrat-Light;
+  text-align: center;
+  padding: 20px;
+  color: black; }
 
-h1,h2,h3,h4,h5{
-    font-family: Montserrat-Light;
-    text-align: center;
-    padding: 20px;
-    color: black;
-}
+p, li, ul, a {
+  font-family: Padauk-Regular;
+  text-align: center;
+  padding: 5px;
+  color: black; }
 
-p,li,ul,a{
-    font-family: Padauk-Regular;
-    text-align: center;
-    padding: 5px;
-    color: black;
-}
+body {
+  background-color: #e4f4fd; }
 
-header{
-    width: 100%;
-    background-color: #66bde6;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo{
-    margin-top: 20px;   
-}
-
-.logo img{
-    width: 80px;
-    height: 80px;
-}
-
-.titulo{
-    font-size: 2rem;
-}
-
-.redes a img{
+header {
+  width: 100%;
+  background-color: #66bde6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  header .logo {
+    margin-top: 20px; }
+    header .logo img {
+      width: 80px;
+      height: 80px; }
+  header .titulo {
+    font-size: 2rem; }
+  header .redes a img {
     width: 40px;
     height: 40px;
     padding: 10px;
-    align-items: stretch;
-}
+    align-items: stretch; }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-bottom: 70px;
-    position: sticky; 
-}
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 70px;
+  position: sticky; }
+  nav .hamburguesa {
+    background-color: #66bde6; }
+    nav .hamburguesa .nav-item a {
+      color: black;
+      font-size: 1.4rem; }
 
-.menu{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    width: 65%;
-    margin: 20px auto;
-    border-radius: 50px;
-}
-
-.menu .item{
-    font-size: 1.4rem;
-}
-
-.menu .item a{
-    color: black;
-    font-weight: bolder;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a8db4;
+  height: 100%; }
+  footer .redes a img {
+    width: 40px;
+    height: 40px;
     padding: 10px;
-    text-decoration: none;
-}
+    align-items: stretch; }
 
-.menu .item a:hover{
-    color: #646464;
-}
+/* Vista Mobile del Header y Footer */
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column; }
+  footer {
+    flex-direction: column; } }
 
-.hamburguesa{
-    background-color: #66bde6;
-}
+/* index.html */
+main .titulo2 {
+  margin-bottom: 50px;
+  font-size: 1.5rem; }
 
-.titulo2{
-    margin-bottom: 50px;
-    font-size: 1.5rem;
-}
+main .slader img {
+  margin-top: 10px;
+  margin-left: 23%; }
 
-.slader img{
-    margin-top: 10px;
-    margin-left: 23%;
-}
-
-.horarios{
-    background-color: #e4f4fd;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin-top: 200px;
-    width: 100%;
-}
-
-.horarios .imagen-horario img{
-    width: 450px;
-}
-
-.horarios .cuadro{
+.horarios {
+  background-color: #e4f4fd;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%; }
+  .horarios .imagen-horario img {
+    width: 450px; }
+  .horarios .cuadro {
     border: solid 3px #2a8db4;
     background-color: #9bf0ff;
     text-align: center;
     margin-top: 40px;
     width: 600px;
-    height: 450px;
-}
+    height: 450px; }
+    .horarios .cuadro .titulohorario {
+      margin-top: 50px;
+      font-size: 2.5rem; }
+    .horarios .cuadro .infohorario h2 {
+      font-size: 2rem; }
+    .horarios .cuadro .infohorario .dias {
+      font-size: 1.3rem; }
 
-.horarios .cuadro .titulohorario{
-    margin-top: 50px;
-    font-size: 2.5rem;
-}
+@media screen and (max-width: 992px) {
+  .horarios {
+    margin-top: 60px;
+    flex-wrap: wrap; }
+    .horarios .imagen-horario {
+      margin-top: 10px; }
+      .horarios .imagen-horario img {
+        width: 90%; }
+    .horarios .cuadro {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 500px;
+      margin-bottom: 70px; }
+      .horarios .cuadro .titulohorario {
+        margin-top: 20px; }
+      .horarios .cuadro .infohorario {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px; } }
 
-.horarios .cuadro .infohorario h2{
-    font-size: 2rem;
-}
-
-.horarios .cuadro .infohorario .dias{
-    font-size: 1.3rem;
-}
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2a8db4;
-    height: 100%;
-}
-
-.autor p{
-   font-size: 1.3rem;
-}
-
-/* Productos.html */
-
-.contenedor{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5rem;
-    margin-bottom: 50px;
-    margin-top: 80px;
-}
-
-.contenedor .productos{
+/* productos.html */
+.contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-bottom: 50px;
+  margin-top: 80px; }
+  .contenedor .productos {
     position: relative;
     height: 250px;
     width: 250px;
     overflow: hidden;
     border-radius: 6px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
-    cursor: pointer;
-}
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+    .contenedor .productos img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out; }
+    .contenedor .productos .capa {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #00677bb3;
+      transition: all 500ms ease-out;
+      opacity: 0; }
+      .contenedor .productos .capa:hover {
+        opacity: 1; }
+      .contenedor .productos .capa .nombre {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 400px;
+        margin-bottom: 120px;
+        transition: all 500ms ease-out; }
+      .contenedor .productos .capa:hover > .nombre {
+        margin-top: 10px;
+        margin-bottom: 0px; }
+      .contenedor .productos .capa p {
+        color: white;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto; }
+      .contenedor .productos .capa .precio {
+        color: #f08d3c;
+        font-size: 1.5rem; }
 
-.contenedor .productos img{
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-}
+/* sobre_nosotros.html */
+main .subtitulo {
+  font-size: 1.5rem; }
 
-.contenedor .productos .capa{
-    text-align: center;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background:#00677bb3;
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-}
+main .nosotros {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 10px; }
 
-.contenedor .productos:hover > .capa{
-    opacity: 1;
-    visibility: visible;
-}
-
-.contenedor .productos .capa h3{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 400px;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;   
-}
-.contenedor .productos:hover > .capa h3{
-    margin-top: 2px;
-    margin-bottom: 0px ; 
-}
-
-.contenedor .productos .capa p{
-    color: white;
-    font-size: 1rem;
-    line-height: 1.5;
-    width: 100%;
-    max-width: 220px;
-    margin: auto;
-}
-
-.contenedor .productos .capa .precio{
-    color: #f08d3c;
-    font-size: 1.5rem;
-}
-
-/*  Sobre Nosotros.html */
-
-.subtitulo{
-    font-size: 1.5rem;
-}
-
-.nosotros{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.3rem;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.ubicacion{
-    display: flex;
+main .ubicacion {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+  main .ubicacion iframe {
     justify-content: center;
-    margin-bottom: 50px;
-}
+    width: 50%; }
 
-.ubicacion iframe{
-    justify-content: center;
-    width: 50%;
-}
-
-/* Servicio Al Cliente.html*/
-
-.nombre1 input{
-    width: 350px;
-}
-
-.apellido1 input{
-    width: 350px;
-}
-
-.email1 input{
-    width: 730px;
-}
-
-input, textarea{
+/* serivicio_al_cliente.html */
+main .caja_formulario {
+  background-color: white;
+  align-items: center;
+  width: 70%;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  padding: 28px;
+  margin: auto;
+  margin-bottom: 70px; }
+  main .caja_formulario input, main .caja_formulario textarea {
     border: 0px;
     outline: none;
-    font-size: 1.1rem;
-}
-
-.campo{
+    font-size: 1.1rem; }
+  main .caja_formulario .nombre1 input {
+    width: 350px; }
+  main .caja_formulario .apellido1 input {
+    width: 350px; }
+  main .caja_formulario .email1 input {
+    width: 730px; }
+  main .caja_formulario .campo {
     border: solid 1.4px #ccc;
     padding: 15px;
     font-size: 1.3rem;
-    color: black;
-}
-
-.textarea1 textarea{
+    color: black; }
+    main .caja_formulario .campo:focus {
+      border-color: #66bde6; }
+  main .caja_formulario .textarea1 textarea {
     max-height: 350px;
-    min-height: 350px;
-}
-
-.campo:focus{
-    border-color: #66bde6;
-}
-
-
-.enviar1{
-    text-align: center;
-    background-color: #66bde6;
-    border-radius: 3px;
-    text-decoration: none;
-}
-
-.enviar1 input{
-    width: 750px;
-    padding: 20px 15px;
-    color: white;
-    background-color: #66bde6;
-    cursor: pointer;
-}
-
-.enviar1 input:hover{
-    background-color: #3b6f86;
-}
-
-.enviar1 input:active{
-    background-color: #38687c;
-}
-
-
-/* Contacto.html */
-
-.nav-item a{
-    color: black;
-    font-size: 1.4rem;
-}
-
-.container{
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 80px;
-}
-
-.caja_formulario{
-    background-color: white;
-    align-items: center;
-    width: 70%;
-    border-radius: 4px;
-    font-size: 1.1rem;
-    padding: 28px;
-    margin: auto;
-    margin-bottom: 70px;
-}
-
-.btn{
-    background-color: #66bde6;
-}
-
-/* Vista Mobile del Header y Footer */
-
-@media screen and (max-width: 576px){
-    header{
-        flex-direction: column;
-    }
-
-    footer{
-        flex-direction: column;
-    }
-}
-
-/* Vista mobile del inicio*/
-
-@media screen and (max-width: 992px){
-    .horarios{
-        margin-top: 60px;
-        flex-wrap: wrap;
-    }
-
-    .imagen-horario{
-        margin-top: 10px;
-    }
-
-    .cuadro{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: 600px;
-        margin-bottom: 70px;
-    }
-
-    .infohorario{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 60px;
-    }
-
-    .horarios .cuadro .titulohorario{
-        margin-top: 20px;
-    }
-}
-
+    min-height: 350px; }
+  main .caja_formulario .btn {
+    background-color: #66bde6; }
